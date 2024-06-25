@@ -1,0 +1,170 @@
+@relation fluconazol
+
+@attribute Age numeric
+@attribute ICU {yes,no}
+@attribute Malignancy {yes,no}
+@attribute Trasplantation {yes,no}
+@attribute SOT {yes,no}
+@attribute BMT {yes,no}
+@attribute Neutropenia {yes,no}
+@attribute HIV {yes,no}
+@attribute Cardiac_disease {yes,no}
+@attribute Pulmonary_disease {yes,no}
+@attribute Liver_disease {yes,no}
+@attribute Renal_failure {yes,no}
+@attribute Diabetes {yes,no}
+@attribute Neurological_disease {yes,no}
+@attribute Autoimmune_disease {yes,no}
+@attribute Inflamatory_bowel_disease {yes,no}
+@attribute Burn {yes,no}
+@attribute Mucositis {yes,no}
+@attribute Diahrroea {yes,no}
+@attribute Surgery {yes,no}
+@attribute Previous_candidemia {yes,no}
+@attribute Colonization {yes,no}
+@attribute Previous_antibiotics {yes,no}
+@attribute Previous_antifungal {yes,no}
+@attribute Previous_immunosupression {yes,no}
+@attribute Candidemia_source {primary,catheter,secundaria}
+@attribute Shock {yes,no}
+@attribute Catheter {yes,no}
+@attribute Catheter_removal {yes,no}
+@attribute FZ_dose numeric
+@attribute Duration numeric
+@attribute Days_to_start_treatment numeric
+@attribute Species {albicans,tropicalis,parapsilosis,glabrata,kefyr,Gcapitatum,krusei,dubliniensis,guillermondii}
+@attribute C_albicans {yes,no}
+@attribute C_parapsilosis {yes,no}
+@attribute Other_species {yes,no}
+@attribute MIC numeric
+@attribute Dose_MIC numeric
+@attribute Death_time numeric
+@attribute Response {Failure,Success}
+
+@data
+54,no,no,no,no,no,no,no,no,no,no,no,no,no,no,yes,no,no,no,yes,no,no,yes,no,yes,primary,no,yes,yes,400,24,2,albicans,yes,no,no,0.125,3200,?,Success
+79,no,yes,no,no,no,no,no,no,no,yes,no,no,yes,no,no,no,no,no,yes,no,yes,no,no,no,primary,no,no,?,200,5,2,albicans,yes,no,no,0.125,1600,9,Success
+53,yes,yes,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,yes,yes,yes,yes,primary,no,yes,yes,400,7,-6,albicans,yes,no,no,0.125,3200,2,Failure
+71,no,yes,no,no,no,no,no,no,no,yes,no,yes,no,no,no,no,no,no,no,no,no,yes,no,yes,catheter,no,yes,yes,400,10,1,tropicalis,no,no,yes,0.25,1600,?,Success
+68,no,yes,no,no,no,no,no,yes,yes,yes,no,yes,no,no,no,no,no,no,no,no,no,yes,no,yes,catheter,yes,yes,yes,400,5,0,parapsilosis,no,yes,no,0.5,800,5,Failure
+78,no,no,no,no,no,no,no,no,no,no,yes,yes,no,no,no,no,no,no,yes,no,yes,yes,no,no,secundaria,no,no,?,200,14,6,albicans,yes,no,no,0.125,1600,?,Success
+83,no,no,no,no,no,no,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,yes,no,no,primary,no,yes,no,400,11,2,albicans,yes,no,no,0.25,1600,?,Success
+57,no,yes,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,yes,primary,no,yes,no,400,5,1,albicans,yes,no,no,0.125,3200,6,Success
+54,no,yes,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,yes,no,yes,no,yes,catheter,no,yes,yes,400,16,2,parapsilosis,no,yes,no,0.5,800,?,Success
+78,no,no,no,no,no,no,no,yes,no,yes,no,no,no,no,no,no,no,no,yes,no,yes,yes,no,no,secundaria,yes,no,?,200,21,1,albicans,yes,no,no,0.5,400,?,Success
+67,no,no,no,no,no,no,no,no,no,no,no,no,yes,no,no,no,no,no,yes,no,yes,yes,no,yes,catheter,yes,yes,yes,400,30,3,albicans,yes,no,no,0.125,3200,35,Success
+62,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,yes,no,no,no,no,no,yes,no,yes,primary,?,yes,yes,400,34,6,albicans,yes,no,no,0.125,3200,?,Success
+77,no,no,no,no,no,no,no,yes,no,no,no,yes,no,no,no,no,no,no,no,no,yes,no,no,no,secundaria,no,no,?,200,13,3,glabrata,no,no,yes,2,100,?,Success
+71,no,yes,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,yes,yes,no,yes,catheter,no,yes,yes,400,14,2,parapsilosis,no,yes,no,0.25,1600,?,Success
+36,no,yes,yes,no,yes,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,yes,no,yes,catheter,no,yes,yes,400,23,3,parapsilosis,no,yes,no,0.5,800,?,Success
+70,yes,no,yes,yes,no,no,no,yes,yes,yes,yes,no,no,no,no,no,no,no,yes,no,no,yes,no,yes,primary,yes,yes,yes,200,13,3,parapsilosis,no,yes,no,0.5,400,?,Success
+87,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,yes,no,yes,yes,no,no,catheter,no,yes,yes,400,9,3,albicans,yes,no,no,0.125,3200,48,Success
+72,no,no,no,no,no,no,no,yes,yes,no,no,no,no,no,no,no,no,no,no,no,no,yes,no,no,primary,no,yes,?,400,14,2,parapsilosis,no,yes,no,0.25,1600,?,Success
+64,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,yes,no,no,yes,no,yes,catheter,no,yes,yes,400,46,2,albicans,yes,no,no,0.125,3200,?,Success
+25,no,no,no,no,no,no,no,no,no,no,yes,no,no,no,no,no,no,yes,no,no,no,no,no,no,catheter,no,yes,no,400,31,2,albicans,yes,no,no,0.125,3200,?,Success
+63,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,yes,no,no,primary,no,yes,yes,400,5,3,albicans,yes,no,no,0.25,1600,8,Success
+75,yes,no,no,no,no,no,no,no,yes,no,yes,no,no,no,no,no,no,no,yes,no,yes,yes,yes,yes,primary,yes,yes,no,400,13,-8,glabrata,no,no,yes,8,50,5,Failure
+62,no,yes,no,no,no,no,no,yes,no,no,yes,yes,no,no,no,no,no,no,no,no,yes,yes,yes,yes,primary,no,yes,yes,400,16,4,albicans,yes,no,no,0.25,1600,?,Success
+75,yes,no,no,no,no,no,no,yes,yes,no,yes,no,no,no,no,no,no,no,yes,no,no,yes,no,yes,catheter,?,yes,yes,400,36,1,albicans,yes,no,no,0.25,1600,?,Failure
+47,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,yes,no,no,yes,no,no,catheter,no,yes,yes,400,18,2,parapsilosis,no,yes,no,0.125,3200,20,Success
+68,no,yes,yes,yes,no,no,no,no,no,yes,no,yes,no,no,no,no,no,no,yes,no,no,yes,yes,yes,primary,no,yes,yes,400,17,5,parapsilosis,no,yes,no,0.25,1600,?,Success
+69,no,no,no,no,no,no,no,yes,no,no,yes,yes,yes,yes,no,no,no,no,no,no,yes,yes,no,yes,primary,no,yes,yes,100,18,0,albicans,yes,no,no,0.125,800,?,Success
+61,no,no,no,no,no,no,no,no,yes,no,no,yes,yes,no,yes,no,no,yes,yes,no,yes,yes,no,yes,primary,no,yes,yes,200,18,2,albicans,yes,no,no,0.125,1600,29,Success
+70,no,no,no,no,no,no,no,yes,yes,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,primary,no,yes,yes,400,10,5,glabrata,no,no,yes,16,25,?,Success
+75,yes,no,no,no,no,no,no,yes,yes,no,yes,yes,no,no,no,no,no,no,yes,no,yes,yes,yes,yes,catheter,no,yes,yes,200,13,2,albicans,yes,no,no,0.125,1600,15,Failure
+68,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,yes,no,yes,yes,no,no,secundaria,no,yes,yes,400,24,3,albicans,yes,no,no,0.25,1600,?,Success
+68,yes,no,no,no,no,no,no,no,yes,no,no,yes,no,no,no,no,no,no,no,no,no,yes,no,yes,catheter,no,yes,yes,400,16,0,albicans,yes,no,no,0.125,3200,?,Success
+66,no,no,no,no,no,no,no,no,yes,no,no,no,no,no,yes,no,no,yes,yes,no,no,yes,no,yes,catheter,no,yes,yes,400,17,2,albicans,yes,no,no,0.5,800,?,Success
+80,no,no,no,no,no,no,no,no,no,no,no,yes,yes,yes,no,no,no,no,yes,no,yes,yes,no,yes,catheter,no,yes,yes,200,17,2,albicans,yes,no,no,0.125,1600,?,Success
+30,yes,no,no,no,no,no,no,no,no,no,yes,no,no,no,no,yes,no,no,yes,no,no,yes,yes,no,catheter,yes,yes,yes,200,54,35,parapsilosis,no,yes,no,64,3.13,56,Failure
+54,yes,no,no,no,no,no,no,no,no,no,no,no,yes,no,no,no,no,no,yes,no,yes,yes,no,no,primary,no,yes,yes,400,6,3,albicans,yes,no,no,0.25,1600,9,Success
+68,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,yes,no,no,catheter,no,yes,yes,400,17,2,albicans,yes,no,no,0.125,3200,?,Success
+24,no,no,no,no,no,no,yes,yes,no,yes,yes,no,no,no,no,no,no,no,no,no,no,yes,no,no,primary,yes,yes,yes,400,43,0,albicans,yes,no,no,0.125,3200,?,Success
+69,no,no,no,no,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,yes,no,no,yes,no,no,catheter,no,yes,yes,400,14,2,parapsilosis,no,yes,no,0.5,800,?,Success
+69,yes,yes,no,no,no,yes,no,no,no,no,yes,no,no,no,no,no,yes,yes,yes,no,yes,yes,no,yes,primary,no,yes,?,400,5,-1,albicans,yes,no,no,0.125,3200,4,Success
+43,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,yes,no,yes,primary,no,yes,no,200,11,1,glabrata,no,no,yes,16,12.5,12,Success
+68,no,no,no,no,no,no,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,yes,no,no,primary,no,no,?,400,21,2,albicans,yes,no,no,0.125,3200,22,Success
+43,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,yes,no,no,yes,no,no,catheter,no,yes,yes,400,18,3,parapsilosis,no,yes,no,0.25,1600,?,Success
+62,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,yes,no,yes,catheter,no,yes,yes,400,54,1,albicans,yes,no,no,1,400,?,Success
+58,no,no,no,no,no,no,no,yes,yes,no,no,yes,no,no,no,no,no,no,yes,no,no,yes,no,no,primary,no,yes,yes,400,15,2,albicans,yes,no,no,0.125,3200,?,Success
+73,no,yes,no,no,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,yes,no,no,yes,no,no,primary,no,yes,yes,400,16,0,albicans,yes,no,no,0.25,1600,?,Success
+78,no,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,primary,no,yes,yes,200,14,3,kefyr,no,no,yes,1,200,?,Success
+66,no,yes,no,no,no,no,no,no,no,no,no,yes,no,no,no,no,no,no,yes,no,no,yes,no,no,catheter,no,yes,yes,400,17,2,albicans,yes,no,no,0.125,3200,?,Success
+69,no,yes,no,no,no,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,yes,no,yes,catheter,no,yes,yes,600,39,12,albicans,yes,no,no,0.125,4800,?,Success
+74,no,no,no,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,yes,no,no,primary,no,yes,yes,400,13,1,Gcapitatum,no,no,yes,8,50,?,Success
+68,no,no,no,no,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,yes,no,no,yes,no,no,primary,no,yes,yes,200,24,6,tropicalis,no,no,yes,0.125,1600,?,Success
+69,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,yes,no,no,no,no,yes,no,yes,primary,no,yes,yes,400,16,3,albicans,yes,no,no,0.125,3200,?,Success
+67,yes,no,no,no,no,no,no,yes,no,no,yes,yes,?,no,no,no,no,no,yes,no,no,yes,no,no,primary,no,yes,yes,400,18,1,albicans,yes,no,no,0.125,3200,?,Success
+68,no,yes,no,no,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,yes,no,no,yes,no,no,primary,no,yes,yes,100,28,0,albicans,yes,no,no,0.25,400,33,Success
+79,no,yes,no,no,no,no,no,no,no,no,yes,yes,no,no,no,no,no,no,yes,no,no,yes,no,no,primary,no,yes,yes,400,10,2,albicans,yes,no,no,0.25,1600,12,Success
+16,no,yes,yes,no,yes,yes,no,no,no,no,no,no,no,no,no,no,yes,yes,yes,no,no,yes,yes,yes,catheter,no,yes,yes,400,20,7,parapsilosis,no,yes,no,0.5,800,?,Success
+82,yes,yes,no,no,no,no,no,yes,no,no,yes,no,no,no,no,no,no,no,yes,no,yes,yes,no,no,catheter,yes,yes,yes,400,10,2,tropicalis,no,no,yes,0.25,1600,12,Failure
+33,no,no,no,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,yes,no,yes,yes,no,no,primary,no,yes,yes,400,12,6,albicans,yes,no,no,0.125,3200,?,Success
+36,yes,no,no,no,no,no,no,no,no,no,yes,no,no,no,no,yes,no,no,yes,no,yes,yes,no,no,catheter,no,yes,yes,200,26,4,parapsilosis,no,yes,no,8,25,32,Failure
+25,no,yes,yes,no,yes,yes,no,no,no,no,no,no,no,no,no,no,yes,yes,no,no,no,yes,yes,yes,catheter,no,yes,yes,200,21,2,parapsilosis,no,yes,no,0.5,400,23,Success
+71,yes,no,no,no,no,no,no,yes,no,no,yes,no,no,no,no,no,no,no,yes,no,yes,no,no,no,catheter,no,yes,yes,200,8,2,tropicalis,no,no,yes,0.125,1600,11,Success
+90,no,no,no,no,no,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,yes,no,no,primary,no,no,?,400,9,3,albicans,yes,no,no,0.125,3200,12,Success
+60,no,no,no,no,no,no,no,no,no,no,no,no,no,?,no,no,no,no,no,no,no,yes,no,no,catheter,no,yes,yes,400,9,2,albicans,yes,no,no,0.125,3200,?,Success
+57,no,no,yes,yes,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,yes,no,no,yes,yes,yes,primary,no,yes,yes,400,15,1,guillermondii,no,no,yes,1,400,?,Success
+54,no,no,no,no,no,no,no,no,no,yes,yes,no,no,no,no,no,no,no,no,no,no,yes,no,no,primary,yes,yes,yes,400,16,10,albicans,yes,no,no,0.125,3200,1,Success
+68,no,yes,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,yes,yes,yes,yes,primary,no,yes,yes,400,14,0,albicans,yes,no,no,0.125,3200,?,Success
+75,yes,yes,no,no,no,yes,no,no,no,no,yes,no,no,no,no,no,no,no,yes,no,no,yes,no,?,primary,yes,yes,yes,400,392,-365,tropicalis,no,no,yes,0.5,800,29,Success
+70,yes,no,no,no,no,no,yes,no,no,no,yes,no,no,no,no,no,no,no,no,no,yes,yes,no,no,catheter,yes,yes,yes,400,7,-6,albicans,yes,no,no,0.25,1600,1,Success
+73,no,no,no,no,no,no,no,yes,no,no,yes,no,no,no,no,no,no,no,yes,no,no,yes,no,yes,primary,yes,yes,yes,400,6,1,glabrata,no,no,yes,8,50,7,Failure
+60,no,yes,yes,yes,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,yes,no,no,yes,no,yes,primary,no,no,?,400,14,0,tropicalis,no,no,yes,0.125,3200,?,Failure
+66,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,yes,no,yes,yes,no,yes,primary,no,yes,yes,400,17,-2,tropicalis,no,no,yes,0.25,1600,?,Success
+69,yes,no,no,no,no,no,no,yes,no,no,yes,yes,yes,no,no,no,no,no,yes,no,no,yes,no,no,primary,no,yes,yes,400,15,6,albicans,yes,no,no,0.125,3200,21,Success
+53,yes,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,yes,no,no,yes,no,no,primary,no,yes,yes,400,21,6,albicans,yes,no,no,0.125,3200,?,Success
+63,no,yes,no,no,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,yes,no,no,no,secundaria,no,no,?,400,14,2,albicans,yes,no,no,0.125,3200,?,Success
+70,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,yes,no,no,yes,no,no,primary,no,no,?,200,18,0,albicans,yes,no,no,0.125,1600,?,Success
+62,no,no,no,no,no,no,no,yes,no,yes,no,yes,no,no,no,no,no,yes,yes,no,no,yes,yes,no,catheter,yes,yes,yes,400,31,-16,glabrata,no,no,yes,4,100,?,Success
+83,no,no,no,no,no,no,no,yes,no,no,yes,no,yes,no,no,no,no,no,no,no,yes,yes,no,no,secundaria,no,yes,yes,400,20,3,albicans,yes,no,no,0.125,3200,?,Success
+80,no,no,no,no,no,no,no,no,yes,no,no,yes,no,no,no,no,no,no,yes,no,no,yes,no,no,catheter,yes,yes,yes,400,21,9,tropicalis,no,no,yes,0.25,1600,?,Success
+66,yes,no,no,no,no,no,no,yes,no,no,yes,yes,no,no,no,no,no,yes,no,no,yes,yes,no,yes,catheter,no,yes,yes,400,15,2,tropicalis,no,no,yes,0.125,3200,?,Success
+66,no,no,no,no,no,no,no,no,yes,no,yes,no,no,no,no,no,no,yes,yes,no,no,yes,no,no,primary,no,yes,yes,200,10,2,albicans,yes,no,no,0.125,1600,12,Success
+50,no,no,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,yes,yes,no,yes,catheter,no,yes,yes,400,14,1,albicans,yes,no,no,0.5,800,8,Success
+39,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,yes,no,no,no,yes,no,no,primary,no,no,?,800,48,4,parapsilosis,no,yes,no,1,800,?,Success
+79,no,no,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,yes,no,yes,primary,no,yes,yes,400,14,5,albicans,yes,no,no,0.125,3200,?,Success
+68,no,yes,no,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,yes,no,no,yes,no,no,primary,no,yes,no,400,10,4,albicans,yes,no,no,0.125,3200,36,Success
+67,no,yes,no,no,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,yes,no,no,no,no,no,primary,no,no,?,400,12,3,albicans,yes,no,no,0.125,3200,?,Success
+80,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,yes,no,no,primary,no,yes,yes,400,12,2,parapsilosis,no,yes,no,1,400,14,Success
+64,yes,no,no,no,no,no,no,yes,no,no,yes,yes,yes,no,no,no,no,no,no,no,yes,yes,no,no,primary,no,yes,yes,200,9,2,albicans,yes,no,no,0.125,1600,11,Success
+76,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,yes,no,yes,yes,no,no,secundaria,yes,yes,yes,400,7,6,albicans,yes,no,no,0.125,3200,7,Failure
+70,no,yes,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,primary,no,yes,yes,400,21,10,albicans,yes,no,no,0.25,1600,?,Success
+54,yes,no,no,no,no,no,no,no,no,no,yes,yes,no,no,no,no,no,no,yes,no,no,yes,no,no,catheter,no,yes,yes,100,37,3,parapsilosis,no,yes,no,0.5,200,?,Success
+76,no,no,no,no,no,no,no,yes,yes,no,yes,no,no,no,no,no,no,no,yes,no,no,no,no,no,catheter,yes,yes,yes,200,12,2,albicans,yes,no,no,0.125,1600,16,Success
+36,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,yes,no,no,yes,no,no,catheter,no,yes,yes,200,14,2,albicans,yes,no,no,0.125,1600,?,Success
+42,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,yes,no,no,catheter,no,yes,yes,400,18,3,parapsilosis,no,yes,no,0.25,1600,?,Success
+80,no,yes,no,no,no,no,no,no,no,yes,yes,no,yes,no,no,no,no,no,no,no,yes,no,no,yes,primary,no,yes,yes,200,14,3,tropicalis,no,no,yes,0.5,400,?,Success
+33,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,yes,no,no,yes,no,no,primary,no,yes,yes,400,13,1,parapsilosis,no,yes,no,0.5,800,?,Success
+40,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,yes,no,no,yes,no,no,catheter,no,yes,yes,400,7,3,albicans,yes,no,no,0.25,1600,?,Success
+61,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,yes,yes,yes,catheter,no,yes,yes,800,29,6,parapsilosis,no,yes,no,0.5,1600,?,Success
+56,no,yes,no,no,no,no,no,no,no,no,?,no,no,no,no,no,no,no,yes,no,no,yes,no,no,primary,no,yes,no,400,17,3,parapsilosis,no,yes,no,0.5,800,?,Success
+47,yes,yes,no,no,no,no,no,no,no,no,no,no,yes,no,no,no,no,no,yes,no,no,yes,no,yes,catheter,no,yes,yes,400,14,3,albicans,yes,no,no,0.25,1600,?,Success
+73,no,yes,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,yes,yes,no,no,no,yes,yes,yes,catheter,no,yes,yes,400,46,1,parapsilosis,no,yes,no,0.5,800,?,Success
+50,no,no,no,no,no,no,no,no,no,yes,no,no,yes,no,no,no,no,no,no,no,no,yes,no,no,primary,yes,yes,yes,200,9,6,tropicalis,no,no,yes,0.125,1600,15,Success
+78,no,no,no,no,no,no,no,yes,no,no,yes,no,no,no,no,no,no,no,yes,no,no,yes,no,no,catheter,no,yes,yes,200,39,4,parapsilosis,no,yes,no,0.5,400,?,Success
+63,yes,no,no,no,no,no,no,no,no,no,yes,no,no,yes,no,no,no,no,yes,no,yes,yes,no,yes,primary,no,yes,yes,100,11,-1,albicans,yes,no,no,0.125,800,10,Failure
+30,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,yes,no,no,yes,no,no,catheter,no,yes,yes,400,17,3,parapsilosis,no,yes,no,0.25,1600,?,Success
+71,no,no,no,no,no,no,no,no,no,no,yes,no,yes,no,no,no,no,no,no,no,no,yes,no,no,primary,no,yes,yes,400,24,2,albicans,yes,no,no,0.25,1600,?,Success
+76,no,no,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,yes,yes,no,no,primary,no,no,?,400,10,3,albicans,yes,no,no,0.5,800,?,Success
+37,no,no,no,no,no,no,yes,no,no,yes,yes,no,no,no,no,no,no,no,no,no,no,yes,no,no,primary,no,yes,yes,400,10,7,albicans,yes,no,no,0.5,800,?,Success
+56,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,yes,no,yes,yes,no,no,secundaria,no,yes,yes,400,11,4,glabrata,no,no,yes,4,100,?,Success
+63,no,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,yes,no,no,yes,no,no,primary,no,no,?,400,15,3,albicans,yes,no,no,0.125,3200,?,Success
+37,yes,no,no,no,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,yes,no,no,no,no,?,primary,no,yes,yes,400,8,3,parapsilosis,no,yes,no,0.125,3200,?,Success
+54,yes,yes,no,no,no,no,no,no,no,yes,yes,no,no,no,no,no,no,no,yes,no,yes,yes,no,no,catheter,no,yes,yes,400,25,2,albicans,yes,no,no,0.125,3200,?,Success
+79,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,yes,no,no,yes,yes,no,catheter,no,yes,yes,200,7,-1,krusei,no,no,yes,32,6.25,?,Success
+48,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,yes,no,yes,primary,no,yes,yes,400,5,-29,tropicalis,no,no,yes,0.25,1600,6,Failure
+58,yes,yes,no,no,no,no,no,no,no,yes,no,no,no,no,no,no,yes,no,yes,no,no,yes,no,no,catheter,?,yes,yes,400,12,0,albicans,yes,no,no,0.25,1600,?,Success
+66,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,yes,no,yes,yes,no,yes,catheter,yes,yes,yes,400,33,7,albicans,yes,no,no,0.125,3200,?,Success
+89,no,yes,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,yes,no,no,yes,no,yes,primary,no,no,?,400,11,-363,albicans,yes,no,no,0.125,3200,?,Success
+27,no,no,no,no,no,no,no,no,no,no,no,no,yes,no,no,no,no,no,yes,no,no,yes,no,yes,primary,no,yes,yes,400,15,2,albicans,yes,no,no,0.125,3200,?,Success
+28,no,no,no,no,no,no,yes,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,yes,no,no,primary,no,yes,no,400,14,1,dubliniensis,no,no,yes,0.125,3200,?,Success
+50,no,no,no,no,no,no,no,yes,no,no,no,yes,no,no,no,no,no,no,yes,no,yes,no,no,no,secundaria,no,no,?,800,21,7,glabrata,no,no,yes,8,100,?,Success
+72,no,no,no,no,no,no,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,yes,no,no,catheter,no,yes,yes,400,15,2,parapsilosis,no,yes,no,1,400,?,Success
+74,no,no,no,no,no,?,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,yes,no,no,primary,no,yes,yes,600,15,5,glabrata,no,no,yes,4,150,?,Success
+75,no,no,no,no,no,no,no,yes,yes,no,yes,yes,no,yes,no,no,no,no,no,no,no,yes,no,yes,catheter,no,yes,yes,400,16,5,albicans,yes,no,no,0.25,1600,?,Success
+79,no,no,no,no,no,no,no,yes,yes,no,yes,no,yes,no,no,no,no,no,no,no,yes,yes,no,no,secundaria,no,yes,yes,200,12,6,albicans,yes,no,no,0.25,800,18,Success
+61,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,yes,no,no,yes,no,no,catheter,no,yes,yes,400,11,2,parapsilosis,no,yes,no,0.5,800,?,Success
+75,yes,no,no,no,no,no,no,yes,yes,no,yes,yes,no,no,no,no,no,no,yes,no,yes,yes,no,yes,catheter,no,yes,yes,400,32,1,albicans,yes,no,no,0.125,3200,35,Success
+41,no,no,no,no,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,yes,no,yes,yes,no,no,secundaria,no,yes,yes,400,14,1,albicans,yes,no,no,0.125,3200,?,Success
